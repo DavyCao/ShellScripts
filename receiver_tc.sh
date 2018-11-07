@@ -1,3 +1,4 @@
+#!/bin/bash
 modprobe ifb
 ip link set dev ifb0 up
 tc qdisc add dev enp1s0f0 ingress
