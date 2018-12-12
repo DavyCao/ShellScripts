@@ -1,0 +1,2 @@
+opkg update && opkg install tc kmod-ifb kmod-sched kmod-netem vim-full python3 screen tcpdump openssh-sftp-server
+insmod sch_netem
