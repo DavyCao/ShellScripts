@@ -1,7 +1,7 @@
 opkg update && opkg install tc kmod-ifb kmod-sched kmod-netem vim-full python3 screen tcpdump openssh-sftp-server ca-certificates zsh curl git-http
 insmod sch_netem
+
+# ZSH config
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 sed -i -- 's:/bin/ash:/usr/bin/zsh:g' /etc/passwd
-
-# In ~/.zshrc, config
-# PROMPT="%{$fg[white]%}%n@%{$fg[green]%}%m%{$reset_color%} ${PROMPT}"
+echo 'PROMPT="%{$fg[white]%}%n@%{$fg[green]%}%m%{$reset_color%} ${PROMPT}"' >> ~/.zshrc
