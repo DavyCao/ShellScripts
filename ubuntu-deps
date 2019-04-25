@@ -1,3 +1,4 @@
 sudo apt-get update
-sudo apt-get install net-tools ethtool ssh iperf iperf3 git curl zsh vim screen
+sudo apt-get install net-tools ethtool ssh iperf iperf3 git curl zsh vim screen gcc make
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo 'PROMPT="%{$fg[white]%}%n@%{$fg[green]%}%m%{$reset_color%} ${PROMPT}"' >> ~/.zshrc
